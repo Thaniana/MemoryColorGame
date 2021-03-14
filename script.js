@@ -9,17 +9,30 @@ const clueHoldTime = 1000;
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 //Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+//var pattern = [2, 6, 4, 3, 8, 1, 2, 5];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
+var pattern;
+var mistakes = 3;
+
+
+function createpattern(length){
+  var pattern = []
+  for(let j=0;j<=length-1;j++){
+    pattern.push(Math.floor(Math.random()*8)+1)
+  }
+  return pattern;
+}
 
 function startGame(){
     //initialize game variables
     progress = 0;
     gamePlaying = true;
+    pattern = createpattern(8);
+    console.log(pattern);
     // swap the Start and Stop buttons
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");
@@ -38,9 +51,13 @@ function stopGame(){
 // Sound Synthesis Functions
 const freqMap = {
   1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  2: 300,
+  3: 329.6,
+  4: 360,
+  5: 392,
+  6: 420,
+  7: 466.2,
+  8: 490,
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -91,9 +108,9 @@ function playClueSequence(){
   guessCounter = 0;
   let delay = nextClueWaitTime; //set delay to initial wait time
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
-    console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
-    setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
-    delay += clueHoldTime 
+    console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
+    setTimeout(playSingleClue,delay,pattern[i]); // set a timeout to play that clue
+    delay += clueHoldTime;
     delay += cluePauseTime;
   }
 }
@@ -131,8 +148,11 @@ function guess(btn){
     }else {
       guessCounter++;
     }
-  }else{
+  }else if(pattern[guessCounter] != btn && mistakes == 1){
     //incorrect guess
     loseGame();
+  }else{
+    mistakes--;
+    playClueSequence();
   }
 }

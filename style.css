@@ -52,3 +52,30 @@ button {
 #button4:active, #button4.lit {
   background:yellow;
 }
+
+
+#button5 {
+  background: sandybrown;
+}
+#button6 {
+  background: gold;
+}
+#button7 {
+  background: lavender;
+}
+#button8 {
+  background: lightsalmon;
+}
+
+#button5:active, #button5.lit{
+  background:saddlebrown;
+}
+#button6:active, #button6.lit {
+  background:goldenrod;
+}
+#button7:active, #button7.lit{
+  background:indigo;
+}
+#button8:active, #button8.lit {
+  background:coral;
+}

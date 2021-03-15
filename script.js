@@ -16,7 +16,7 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 var pattern;
-var mistakes = 3;
+var mistakes;
 
 
 function createpattern(length){
@@ -29,6 +29,7 @@ function createpattern(length){
 
 function startGame(){
     //initialize game variables
+    mistakes = 3;
     progress = 0;
     gamePlaying = true;
     pattern = createpattern(8);

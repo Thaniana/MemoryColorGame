@@ -4,7 +4,7 @@
 
 Submitted by: Muhammed Suleman Thaniana
 
-Time spent: **4** hours spent in total
+Time spent: **9** hours spent in total
 
 Link to project:[My project](https://glitch.com/edit/#!/translucent-opaque-twilight)
 
@@ -27,11 +27,11 @@ The following **optional** features are implemented:
 * [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [x] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [x] More than 4 functional game buttons
-* [ ] Playback speeds up on each turn
+* [x] Playback speeds up on each turn
 * [x] Computer picks a different pattern each time the game is played
 * [x] Player only loses after 3 mistakes (instead of on the first mistake)
-* [ ] Game button appearance change goes beyond color (e.g. add an image)
-* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [x] Game button appearance change goes beyond color (e.g. add an image)
+* [x] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
@@ -41,7 +41,14 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](https://i.imgur.com/BK5Xadt.gif)
+![](https://i.imgur.com/FUtcHo3.gif)
+
+![](https://i.imgur.com/Wj16d2p.gif)
+
+![](https://i.imgur.com/iCzim9m.gif)
+
+![](https://i.imgur.com/5hcTsgk.gif)
+
 
 
 
@@ -83,9 +90,17 @@ In the same connection I also would love to know how harder and more complicated
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)   
 
+One thing I would really love to implement is the optional timer feature, ie give the user limited time to do their turn. I struggled in implementing this due 
+to the timer positioning in the code. I tried for a couple hours but given more time I would love to work on this and get it working.
+
+
 One feature I would love to add is to have variable levels of difficulty that could be chosen by the user, this would affect the speed, the number of boxes
 and the length of the pattern. A nice way to implement this would be to start at a central home page where we would select the difficulty after which the user 
 would be guided to the game page, with the correct number of squares on the page. This I believe could be done through the strategies learned in the pre work.
+
+To further enhance this game picking up from my implementation of using animals other things like alphabets numbers could be used for kids and maybe things 
+like alphabets, words etcetra could be added for adults trying to learn something new. The homepage a I have described above could be used to choose which 
+one we want to choose.
 
 Another good practice and chance to learn react would be to do the same thing using react, which I believe would combine the html and javascript files.
 

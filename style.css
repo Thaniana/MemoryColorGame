@@ -23,59 +23,99 @@ button {
   margin:2px;
 }
 
+audio{
+  display: None
+}
+
 .hidden {
   display: none;
 }
 
 #button1 {
   background: lightgreen;
+  background-image: none;
 }
 #button2 {
   background: lightblue;
+  background-image: none;
 }
 #button3 {
   background: pink;
+  background-image: none;
 }
 #button4 {
   background: lightyellow;
+  background-image: none;
 }
 
 #button1:active, #button1.lit{
-  background:green;
+  background: green;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fc.png?v=1616167301478);
+  background-size: 265px 265px;
 }
 #button2:active, #button2.lit {
   background:blue;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fdog.png?v=1616169147896);
+  background-size: 265px 265px;
 }
 #button3:active, #button3.lit{
   background:red;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fchick.png?v=1616169690161);
+  background-size: 265px 265px;
 }
 #button4:active, #button4.lit {
   background:yellow;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fbird.png?v=1616169357602);
+  background-size: 265px 265px;
 }
 
 
 #button5 {
   background: sandybrown;
+  background-image: none
 }
 #button6 {
   background: gold;
+  background-image: none
 }
 #button7 {
   background: lavender;
+  background-image: none
 }
 #button8 {
   background: lightsalmon;
+  background-image: none
 }
 
 #button5:active, #button5.lit{
   background:saddlebrown;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fparrot.png?v=1616170312188);
+  background-size: 265px 265px;
 }
 #button6:active, #button6.lit {
   background:goldenrod;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Flion.png?v=1616169947353);
+  background-size: 265px 265px;
 }
 #button7:active, #button7.lit{
   background:indigo;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fcat1.png?v=1616170158561);
+  background-size: 265px 265px;
 }
 #button8:active, #button8.lit {
   background:coral;
+  background-image:url(https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Ffish.png?v=1616170163664);
+  background-size: 265px 265px;
 }
+
+
+#timer {
+  font-family: helvetica, arial, sans-serif;
+  margin: 1em;
+  background-color: white;
+  color: black; /*can change color scheme*/
+  width: 100px;
+  font-size: 2em;
+  float: right;
+}
+

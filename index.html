@@ -20,17 +20,56 @@
     </p>
     <button id="startBtn" onclick="startGame()">Start</button>
     <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <div id="timer">
+      Time:
+      <div id="count">
+        10
+      </div>
+    </div>
     <div id="gameButtonArea">
-      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"> </button>
-      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"> </button>
-      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"> </button>
-      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"> </button>
-      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"> </button>
-      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"> </button>
-      <button id="button7" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()"> </button>
-      <button id="button8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()"> </button>
+      <button id="button1" onclick="guess(1)" onmousedown="playaudio(1)" onmouseup="stopaudio(1)">
+      <audio controls loop id="audio1">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fcow_sound.mp3?v=1616168083621" type="audio/mpeg">
+      </audio> 
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="playaudio(2)" onmouseup="stopaudio(2)">
+      <audio controls id="audio2">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fdog.mp3?v=1616173125399" type="audio/mpeg">
+      </audio> 
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="playaudio(3)" onmouseup="stopaudio(3)"> 
+      <audio controls id="audio3">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Frooster.mp3?v=1616172655368" type="audio/mpeg">
+      </audio> 
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="playaudio(4)" onmouseup="stopaudio(4)"> 
+      <audio controls id="audio4">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fbirds.mp3?v=1616172673991" type="audio/mpeg">
+      </audio> 
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="playaudio(5)" onmouseup="stopaudio(5)">
+      <audio controls id="audio5">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fparrot.mp3?v=1616172658840" type="audio/mpeg">
+      </audio> 
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="playaudio(6)" onmouseup="stopaudio(6)"> 
+      <audio controls id="audio6">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Flion.mp3?v=1616172665364" type="audio/mpeg">
+      </audio> 
+      </button>
+      <button id="button7" onclick="guess(7)" onmousedown="playaudio(7)" onmouseup="stopaudio(7)"> 
+      <audio controls id="audio7">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Fcat.mp3?v=1616173097602" type="audio/mpeg">
+      </audio> 
+      </button>
+      <button id="button8" onclick="guess(8)" onmousedown="playaudio(8)" onmouseup="stopaudio(8)"> 
+      <audio controls id="audio8">
+      <source src="https://cdn.glitch.com/d89e6182-0b61-40a0-919d-31901e7c276c%2Ffish.mp3?v=1616173104761" type="audio/mpeg">
+      </audio> 
+      </button>
     
     </div>
     
   </body>
 </html>
+

@@ -41,6 +41,10 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
+The sounds are fun as well corresponding to the respective animal being clicked, unfortunately the gif does not have sound so would recommend to go
+to project and play it for a more wholesoe experience.
+
 ![](https://i.imgur.com/FUtcHo3.gif)
 
 ![](https://i.imgur.com/Wj16d2p.gif)
